@@ -5,12 +5,12 @@
 <div class="container">
   {% if form %}
   {% for k in form %}
-  <ul>
-    <li>{{ k.author_name }}</li>
-    <li>{{ k.article_name }}</li>
-    <li>{{ k.date_time }}</li>
-    <li>{{ k.content|linebreaks }}</li>
-  </ul>
+    <p>{{ k.author_name }}</p>
+    <p>{{ k.article_name }}</p>
+    <p>{{ k.date_time }}</p>
+    <p>{{ k.content|linebreaks }}</p>
+    
+
   {% endfor %}
   {% else %}
   <h1>NO DATA FOUND</h1>
