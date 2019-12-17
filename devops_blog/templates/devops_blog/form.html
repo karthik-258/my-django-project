@@ -2,10 +2,14 @@
 
 {% block body_block %}
 <div class="jumbotron">
-  <div class="container">
-    {{ form.as_p}}
+  <form method="POST" class="container" >
+    <div class="container">
+      {{ form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" value="submit">
+    </div>
+  </form>
 
-  </div>
 </div>
 
 {% endblock %}
