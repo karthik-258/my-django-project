@@ -7,4 +7,5 @@ urlpatterns = [
     path('blogform/',views.blogformview,name='blogform'),
     path('all_blogs/',views.all_blogsview,name='all_blogs'),
     path('thankyou/',views.thankyouview,name='thankyou'),
+    path('git/',views.gitview,name='git')
 ]

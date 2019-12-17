@@ -23,3 +23,8 @@ def all_blogsview(request):
 
 def thankyouview(request):
     return render(request,'devops_blog/thankyou.html')
+
+def gitview(request):
+    my_list = blogmodel.objects.order_by('author_name')
+    my_dict = {'form':my_list}
+    return render(request,'devops_blog/git.html',context=my_dict)
