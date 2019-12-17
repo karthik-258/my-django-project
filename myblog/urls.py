@@ -24,5 +24,5 @@ urlpatterns = [
     path('',include('login_register.urls')),
     path('logout/', views.user_logout, name='user_logout'),
     path('special/', views.special,name='special'),
-    path('blogform/',include('devops_blog.urls')),
+    path('all_blogs/',include('devops_blog.urls')),
 ]

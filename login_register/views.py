@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from login_register.forms import UserForm,UserProfileInfoForm
+from devops_blog import views
 
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
@@ -65,7 +66,7 @@ def user_login(request):
                 login(request,user)
                 # Send the user back to some page.
                 # In this case their homepage.
-                return HttpResponseRedirect(reverse('blogform'))
+                return views.all_blogsview(request)
             else:
                 # If account is not active:
                 return HttpResponse("Your account is not active.")
