@@ -5,9 +5,9 @@
 <div class="container">
   {% if form %}
   {% for k in form %}
-    <p>Author : {{ k.author_name|upper }}</p>
-    <p>Title : {{ k.article_name|title }}</p>
-    <p>Published On : {{ k.date_time }}</p>
+  <p><b>Author :</b> {{ k.author_name|upper }}</p>
+  <p><b>Title :</b> {{ k.article_name|title }}</p>
+  <p><b>Published On :</b> {{ k.date_time }}</p>
     <div class="jumbotron">
     <p>{{ k.content|linebreaks }}</p>
     </div>

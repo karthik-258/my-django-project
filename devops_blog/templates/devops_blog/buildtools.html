@@ -5,10 +5,10 @@
 <div class="container">
   {% if form %}
   {% for k in form %}
-  {% if k.type == 'G' %}
-    <p><b>Author :</b> {{ k.author_name|upper }}</p>
-    <p><b>Title :</b> {{ k.article_name|title }}</p>
-    <p><b>Published On :</b> {{ k.date_time }}</p>
+  {% if k.type == 'B' %}
+  <p><b>Author :</b> {{ k.author_name|upper }}</p>
+  <p><b>Title :</b> {{ k.article_name|title }}</p>
+  <p><b>Published On :</b> {{ k.date_time }}</p>
     <div class="jumbotron">
     <p>{{ k.content|linebreaks }}</p>
     </div>
